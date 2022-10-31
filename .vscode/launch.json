@@ -1,0 +1,9 @@
+{
+    "configurations": [
+        {
+            "name": "Launch 404.html",
+            "type": "firefox",
+            "request": "attach",
+        }
+    ]
+}
