@@ -1,10 +1,12 @@
 /* I swear to fuck if your tag names are not funny I will block you from the repo*/
 
 body {
-    background: linear-gradient(to top, #f9dd9a, #f0f99a) no-repeat;
-    min-height: 100vh;
+    background-image: url('weird_photos/background.png'), linear-gradient(to top, #f9dd9a, #f0f99a);
+    background-attachment: fixed;
+    background-clip: border-box;
+    background-repeat: no-repeat;
     font-family: 'Island Moments', cursive;
-    font-size: larger;
+    font-size: x-large;
 }
 
 .tiny-but-readable-n-not-shit {
