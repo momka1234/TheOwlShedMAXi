@@ -6,6 +6,43 @@
             "style-selected": "",
             "url": "/lorem.html",
             "id": 1
+        },
+        {
+            "name": "Ipsum",
+            "style": "",
+            "style-selected": "",
+            "url": "/lorem.html",
+            "id": 2
+        },
+        {
+            "name": "Facere doloremque",
+            "style": "",
+            "style-selected": "",
+            "url": "/lorem.html",
+            "id": 3
+        }
+    ],
+    "home": [
+        {
+            "name": "Lorem",
+            "style": "",
+            "style-selected": "",
+            "url": "/lorem.html",
+            "id": 4
+        },
+        {
+            "name": "Ipsum",
+            "style": "",
+            "style-selected": "",
+            "url": "/lorem.html",
+            "id": 5
+        },
+        {
+            "name": "Facere doloremque",
+            "style": "",
+            "style-selected": "",
+            "url": "/lorem.html",
+            "id": 6
         }
     ]
 }
