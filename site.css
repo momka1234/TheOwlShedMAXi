@@ -7,6 +7,7 @@ body {
     background-repeat: no-repeat;
     font-family: 'Island Moments', cursive;
     font-size: x-large;
+    overflow: hidden;
 }
 
 .tiny-but-readable-n-not-shit {
@@ -14,8 +15,18 @@ body {
 }
 
 .boring-centered-content-kus-im-a-basic-bitch {
-    margin-left: 30vw;
+    margin-left: 16vw;
     margin-right: 30vw;
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+    border: solid #b7f799 0.3vw;
+    min-height: 70vh;
+    max-height: 70vh;
+    overflow: auto;
+    padding-left: 3%;
+    padding-right: 3%;
+    background: #b7f79999;
+    border-radius: 3%;
 }
 
 .doof-evil-inc {
@@ -30,4 +41,65 @@ body {
     font-weight: 400;
     font-display: swap;
     src: url("fucin-fonts/Caveat/Caveat-VariableFont_wght.ttf") format('woff2');
+}
+
+.sidebar-left {
+    margin-left: 1vw;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    max-width: 13vw;
+    min-width: 13vw;
+    height: fit-content;
+    min-height: 30vh;
+
+    border: solid #b7f799 0.3vw;
+    overflow: auto;
+    padding-left: 0.3%;
+    padding-right: 0.3%;
+    background: #b7f79999;
+    border-radius: 3%;
+}
+
+.bar-item-entry {
+    margin-left: 1vw;
+    text-decoration: none;
+}
+
+.closed>.bar-item-children {
+    display: none;
+}
+
+.bar-item {
+    color: #445f38;
+}
+
+.bar-item-entry::before {
+    content: "⏹";
+}
+
+.selected::before {
+    content: "⏺";
+}
+
+.bar-item.closed::before {
+    content: "▲"
+}
+
+.bar-item::before {
+    content: "▼"
+}
+
+
+
+.bar-item-entry:link,
+.bar-item-entry:visited,
+.bar-item-entry:hover {
+    color: #445f38;
+}
+
+.selected:link,
+.selected:visited,
+.selected:hover,
+.selected {
+    color: #52375e;
 }
