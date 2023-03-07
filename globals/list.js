@@ -23,7 +23,7 @@ window.onload = function () {
     if (out.home.length >= 1) {
         var homeContent = `<div id="bar-item-home" class="bar-item ${out.home.filter(x => x.id == pageId).length == 1 ? "selected" : "closed"}" onclick="toggleHidden('home')">Home<div class="bar-item-children">`
         for (var i = 0; i < out.home.length; i++) {
-            var entry = out.home[i];
+            var entry = out.homeimage.png[i];
             homeContent += `<a id="bar-item-home-${entry.id}" class="bar-item-entry ${entry.id == pageId ? "selected" : ""}" style="${entry.style}" href="${entry.url}">${entry.name}</a><br />\n`
         }
         homeContent += "</div></div>"
