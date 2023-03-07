@@ -10,12 +10,18 @@ body {
 }
 
 .tiny-but-readable-n-not-shit {
-    font-size: small;
+    font-size: large;
 }
 
 .boring-centered-content-kus-im-a-basic-bitch {
     margin-left: 30vw;
     margin-right: 30vw;
+}
+
+.doof-evil-inc {
+    font-family: monospace;
+    font-size: xx-large;
+    color: darkorchid;
 }
 
 @font-face {
