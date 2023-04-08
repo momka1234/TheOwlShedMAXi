@@ -4,8 +4,15 @@
             "name": "Lorem",
             "style": "",
             "style-selected": "",
-            "url": "/lorem.html",
+            "url": "/lorem.html?debug=1",
             "id": 1
+        },
+        {
+            "name": "Buttons",
+            "style": "",
+            "style-selected": "",
+            "url": "/debug/buttons.html?debug=1",
+            "id": 4
         }
     ],
     "home": [
@@ -13,8 +20,15 @@
             "name": "Homepage",
             "style": "",
             "style-selected": "",
-            "url": "/?debug=0",
+            "url": "/",
             "id": 2
+        },
+        {
+            "name": "Pronouns",
+            "style": "",
+            "style-selected": "",
+            "url": "/pronouns.html",
+            "id": 3
         }
     ]
 }

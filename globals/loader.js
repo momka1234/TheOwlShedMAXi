@@ -1,4 +1,12 @@
+var updateElms = function (elms, text) {
+    for (var i = 0; i < elms.length; i++)
+        elms[i].innerText = text;
+}
+
 window.onload = function () {
+    var loaded = {};
+    loaded.filled = -1;
+
     var req = new XMLHttpRequest();
 
     req.open('GET', '/s-dat/fillers.jsonc', false);
@@ -10,6 +18,7 @@ window.onload = function () {
     for (var i = 0; i < elms.length; i++) {
         var e = elms[i];
         e.innerText = out[e.innerHTML];
+        ++loaded.filled;
     }
 
     const params = new Proxy(new URLSearchParams(window.location.search), {
@@ -38,6 +47,8 @@ window.onload = function () {
         }
         debugContent += "</div></div>"
         bar.innerHTML += debugContent;
+
+        loaded.debug = out.debug.length;
     }
     if (out.home.length >= 1) {
         var homeContent = `<div id="bar-item-home" class="bar-item ${out.home.filter(x => x.id == pageId).length == 1 ? "selected" : "closed"}" onclick="toggleHidden('home')">Home<div class="bar-item-children">`
@@ -47,13 +58,17 @@ window.onload = function () {
         }
         homeContent += "</div></div>"
         bar.innerHTML += homeContent;
+        loaded.home = out.home.length;
     }
 
     if (IS_DEBUG) {
-        bar.innerHTML += `<h3>DEBUG_INFO</h3>
+        bar.innerHTML += `<div class="monospace debug"><h2>DEBUG_INFO</h2>
 <ul>
-<li>PAGEDAT:${document.getElementById("pagedat").innerHTML}
-</ul>`;
+<li>PAGEDAT→${document.getElementById("pagedat").innerHTML}
+<li>LD_DEBUG→${loaded.debug ?? 'failed'}
+<li>LD_HOME→${loaded.home ?? 'failed'}
+<li>FILLED→${loaded.filled == -1 ? 'none' : loaded.filled + 1}
+</ul></div>`;
     }
 }
 

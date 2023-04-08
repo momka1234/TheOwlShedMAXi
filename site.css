@@ -1,5 +1,3 @@
-/* I swear to fuck if your tag names are not funny I will block you from the repo unless i think ur cool*/
-
 body {
     background-image: url('weird_photos/background.png'), linear-gradient(to top, #f9dd9a, #f0f99a);
     background-attachment: fixed;
@@ -107,4 +105,41 @@ body {
 
 .content {
     display: inline-flex;
+}
+
+.monospace {
+    font-family: monospace;
+    font-size: small;
+}
+
+.debug {
+    border: solid #f499f7 0.3vw;
+    overflow: auto;
+    padding-left: 0.3%;
+    padding-right: 0.3%;
+    background: #fab8fc;
+    border-radius: 3%;
+}
+
+.button {
+    overflow: auto;
+    padding: 0.6%;
+    border-radius: 3%;
+    width: fit-content;
+    margin: 0.6%;
+    cursor: pointer;
+}
+
+.button.active {
+    background: #fab8fc;
+    border: solid #f499f7 0.3vw;
+}
+
+.button.inactive {
+    background: #d9a1db;
+    border: solid #bf79c2 0.3vw;
+}
+
+.button-bar {
+    display: flex;
 }
