@@ -4,14 +4,14 @@
             "name": "Lorem",
             "style": "",
             "style-selected": "",
-            "url": "/lorem.html?debug=1",
+            "url": "/lorem.html",
             "id": 1
         },
         {
             "name": "Buttons",
             "style": "",
             "style-selected": "",
-            "url": "/debug/buttons.html?debug=1",
+            "url": "/debug/buttons.html",
             "id": 4
         }
     ],
