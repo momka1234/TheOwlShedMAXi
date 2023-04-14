@@ -1,6 +1,7 @@
 body {
     background-image: url('weird_photos/background.png'), linear-gradient(to top, #f9dd9a, #f0f99a);
     background-attachment: fixed;
+    background-size: cover;
     background-clip: border-box;
     background-repeat: no-repeat;
     font-family: 'Island Moments', cursive;
