@@ -1,0 +1,39 @@
+.post-pfp {
+    height: 2rem;
+}
+
+.post-username {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.user-stuff {
+    display: inline-flex;
+}
+
+.grave-post {
+    background-color: #ce99f799;
+    border: solid #ce99f7 0.3vw;
+}
+
+.fizzy-post {
+    background-color: #99dbf799;
+    border: solid #99dbf7 0.3vw;
+}
+
+.post {
+    overflow: auto;
+    border-radius: 3%;
+    padding: 1%;
+    margin-top: 3vh;
+}
+
+.post-content {
+    margin-left: 2rem;
+}
+
+.other-content {
+    height: 30vh;
+    width: 30vw;
+    border: none;
+}

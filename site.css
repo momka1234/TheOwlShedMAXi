@@ -13,7 +13,7 @@ body {
 }
 
 .boring-centered-content-kus-im-a-basic-bitch {
-    margin-left: 16vw;
+    margin-left: 15vw;
     margin-right: 30vw;
     margin-top: 15vh;
     margin-bottom: 15vh;
@@ -21,11 +21,19 @@ body {
     min-height: 70vh;
     max-height: 70vh;
     min-width: 40vw;
+    max-width: 40vw;
     overflow: auto;
     padding-left: 3%;
     padding-right: 3%;
     background: #b7f79999;
     border-radius: 3%;
+}
+
+.has-right-bar {
+    margin-left: 11vw;
+    margin-right: 11vw;
+    min-width: 40vw;
+    max-width: 40vw;
 }
 
 .doof-evil-inc {
@@ -44,6 +52,23 @@ body {
 
 .sidebar-left {
     margin-left: 1vw;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    max-width: 13vw;
+    min-width: 13vw;
+    height: fit-content;
+    min-height: 30vh;
+
+    border: solid #b7f799 0.3vw;
+    overflow: auto;
+    padding-left: 0.3%;
+    padding-right: 0.3%;
+    background: #b7f79999;
+    border-radius: 3%;
+}
+
+.sidebar-right {
+    margin-right: 1vw;
     margin-top: 5vh;
     margin-bottom: 5vh;
     max-width: 13vw;
@@ -142,4 +167,20 @@ body {
 
 .button-bar {
     display: flex;
+}
+
+.no-background-or-border-its-oldschool-time {
+    background: none;
+    border: none;
+    margin-bottom: none;
+    max-height: 84vh;
+}
+
+.sidebar-title {
+    width: 12vw;
+    height: 4rem;
+    font-size: 3rem;
+    padding: none;
+    margin: none;
+    text-align: center;
 }
