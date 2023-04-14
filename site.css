@@ -58,6 +58,7 @@ body {
     max-width: 13vw;
     min-width: 13vw;
     height: fit-content;
+    max-height: 90vh;
     min-height: 30vh;
 
     border: solid #b7f799 0.3vw;
@@ -75,10 +76,11 @@ body {
     max-width: 13vw;
     min-width: 13vw;
     height: fit-content;
+    max-height: 90vh;
     min-height: 30vh;
 
     border: solid #b7f799 0.3vw;
-    overflow: scroll;
+    overflow: auto;
     padding-left: 0.3%;
     padding-right: 0.3%;
     background: #b7f79999;
