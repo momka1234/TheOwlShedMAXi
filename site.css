@@ -187,3 +187,14 @@ body {
     margin: none;
     text-align: center;
 }
+
+.fizzy-name {
+    color: #299111;
+}
+
+.fizzy-name::before,
+.fizzy-name::after,
+.sparkles::before,
+.sparkles::after {
+    content: '✨';
+}

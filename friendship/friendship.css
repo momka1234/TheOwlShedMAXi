@@ -37,3 +37,7 @@
     width: 30vw;
     border: none;
 }
+
+.date {
+    font-size: medium;
+}
