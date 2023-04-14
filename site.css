@@ -78,7 +78,7 @@ body {
     min-height: 30vh;
 
     border: solid #b7f799 0.3vw;
-    overflow: auto;
+    overflow: scroll;
     padding-left: 0.3%;
     padding-right: 0.3%;
     background: #b7f79999;
