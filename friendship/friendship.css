@@ -38,6 +38,16 @@
     border: none;
 }
 
-.date {
-    font-size: medium;
+.footer {
+    font-size: x-small;
+    font-family: monospace;
+}
+
+.wordcount::before {
+    content: '||';
+    font-weight: normal;
+}
+
+.wordcount {
+    font-weight: bold;
 }
