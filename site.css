@@ -198,3 +198,9 @@ body {
 .sparkles::after {
     content: '✨';
 }
+
+.onrac-without-the-rac {
+    font-family: fantasy;
+    color: darkcyan;
+    font-size: 2rem;
+}
