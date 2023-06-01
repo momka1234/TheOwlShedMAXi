@@ -70,6 +70,16 @@ window.onload = function () {
         bar.innerHTML += homeContent;
         loaded.friendship = out.friendship.length;
     }
+    if (out.thoughts.length >= 1) {
+        var homeContent = `<div id="bar-item-thoughts" class="bar-item ${out.thoughts.filter(x => x.id == pageId).length == 1 ? "selected" : "closed"}" onclick="toggleHidden('thoughts')">Thoughts<div class="bar-item-children">`
+        for (var i = 0; i < out.thoughts.length; i++) {
+            var entry = out.thoughts[i];
+            homeContent += `<a id="bar-item-thoughts-${entry.id}" class="bar-item-entry ${entry.id == pageId ? "selected" : ""}" style="${entry.style}" href="${entry.url + window.location.search}">${entry.name}</a><br />\n`
+        }
+        homeContent += "</div></div>"
+        bar.innerHTML += homeContent;
+        loaded.thoughts = out.friendship.length;
+    }
 
     if (IS_DEBUG) {
         bar.innerHTML += `<div class="monospace debug"><h2>DEBUG_INFO</h2>
@@ -78,6 +88,7 @@ window.onload = function () {
 <li>LD_DEBUG→${loaded.debug ?? 'failed'}
 <li>LD_HOME→${loaded.home ?? 'failed'}
 <li>LD_FRIENDSHIP→${loaded.friendship ?? 'failed'}
+<li>LD_THOUGHTS→${loaded.thoughts ?? 'failed'}
 <li>FILLED→${loaded.filled == -1 ? 'none' : loaded.filled + 1}
 </ul></div>`;
     }

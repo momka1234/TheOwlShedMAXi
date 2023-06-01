@@ -204,3 +204,12 @@ body {
     color: darkcyan;
     font-size: 2rem;
 }
+
+.warning-full-width {
+    background-color: #f7999999;
+    width: 100%;
+    font-size: large;
+    padding: 0.5vw;
+    border-radius: 1%;
+    border: solid #f79999 0.3vw;
+}

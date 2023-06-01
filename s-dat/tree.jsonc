@@ -13,6 +13,13 @@
             "style-selected": "",
             "url": "/debug/buttons.html",
             "id": 4
+        },
+        {
+            "name": "Sample Page",
+            "style": "",
+            "style-selected": "",
+            "url": "/debug/sample-page.html",
+            "id": 6
         }
     ],
     "home": [
@@ -38,6 +45,15 @@
             "style-selected": "",
             "url": "/friendship/friendship-2.0.html",
             "id": 5
+        }
+    ],
+    "thoughts" : [
+        {
+            "name": "When I Brake",
+            "style": "",
+            "style-selected": "",
+            "url": "/thoughts/when-i-break.html",
+            "id": 7
         }
     ]
 }
