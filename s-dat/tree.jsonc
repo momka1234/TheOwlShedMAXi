@@ -47,5 +47,13 @@
             "id": 5
         }
     ],
-    "thoughts": []
+    "thoughts": [
+        {
+            "name": "Goals",
+            "style": "",
+            "style-selected": "",
+            "url": "/thoughts/goals.html",
+            "id": 8
+        }
+    ]
 }
