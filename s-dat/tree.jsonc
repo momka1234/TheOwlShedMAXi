@@ -47,13 +47,5 @@
             "id": 5
         }
     ],
-    "thoughts" : [
-        {
-            "name": "When I Brake",
-            "style": "",
-            "style-selected": "",
-            "url": "/thoughts/when-i-break.html",
-            "id": 7
-        }
-    ]
+    "thoughts": []
 }
