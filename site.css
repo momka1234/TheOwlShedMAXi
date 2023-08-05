@@ -14,7 +14,7 @@ body {
 }
 
 .boring-centered-content-kus-im-a-basic-bitch {
-    margin-left: 15vw;
+    margin-left: 12vw;
     margin-right: 30vw;
     margin-top: 15vh;
     margin-bottom: 15vh;
@@ -31,8 +31,8 @@ body {
 }
 
 .has-right-bar {
-    margin-left: 11vw;
-    margin-right: 11vw;
+    margin-left: 8vw;
+    margin-right: 8vw;
     min-width: 40vw;
     max-width: 40vw;
 }
@@ -55,8 +55,8 @@ body {
     margin-left: 1vw;
     margin-top: 5vh;
     margin-bottom: 5vh;
-    max-width: 13vw;
-    min-width: 13vw;
+    max-width: 16vw;
+    min-width: 16vw;
     height: fit-content;
     max-height: 90vh;
     min-height: 30vh;
@@ -73,8 +73,8 @@ body {
     margin-right: 1vw;
     margin-top: 5vh;
     margin-bottom: 5vh;
-    max-width: 13vw;
-    min-width: 13vw;
+    max-width: 16vw;
+    min-width: 16vw;
     height: fit-content;
     max-height: 90vh;
     min-height: 30vh;
@@ -212,4 +212,8 @@ body {
     padding: 0.5vw;
     border-radius: 1%;
     border: solid #f79999 0.3vw;
+}
+
+.display-initial {
+    display: initial;
 }

@@ -1,0 +1,27 @@
+.book-info {
+    background-color: #ce99f799;
+    border: solid #ce99f7 0.3vw;
+    overflow: auto;
+    border-radius: 3%;
+    padding: 1%;
+    margin-top: 3vh;
+}
+
+.book-inline {
+    display: inline-flex;
+}
+
+.rating {
+    color: green;
+    display: inline-block;
+    font-size: 2rem;
+}
+
+/* PRESENTATION STYLES */
+/* body {
+    align-items: center;
+    background: #333;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+} */
