@@ -61,6 +61,13 @@
             "style-selected": "",
             "url": "/thoughts/reviews/wish-upon-a-satellite.html",
             "id": 9
+        },
+        {
+            "name": "Friend PC Recomendation",
+            "style": "",
+            "style-selected": "",
+            "url": "/thoughts/friend-pc-info.html",
+            "id": 10
         }
     ]
 }

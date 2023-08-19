@@ -1,5 +1,31 @@
+:root {
+    --true-background-gradient: linear-gradient(to top, #f9dd9a, #f0f99a);
+    
+    --content-background-solid: #b7f799;
+    --content-background-transparent: #b7f79999;
+    --debug-background-solid: #f499f7;
+    --debug-background-transparent: #f499f799;
+    --warning-background-solid: #f79999;
+    --warning-background-transparent: #f7999999;
+    
+    --button-background-active: #fab8fc;
+    --button-border-active: #f499f7;
+    --button-background-inactive: #d9a1db;
+    --button-border-inactive: #bf79c2;
+    
+    --evil-text: darkorchid;
+    --bar-text: #445f38;
+    --bar-text-selected: #52375e;
+    --fizzy-name-text: #299111;
+    --onrac-name-text: darkcyan;
+    --TOC-link-text: #8d38f4;
+    
+    --table-border: #b979bd;
+    --table-alt-row: #b979bd99;
+}
+
 body {
-    background-image: url('weird_photos/background.png'), linear-gradient(to top, #f9dd9a, #f0f99a);
+    background-image: url('weird_photos/background.png'), var(--true-background-gradient);
     background-attachment: fixed;
     background-size: cover;
     background-clip: border-box;
@@ -18,7 +44,7 @@ body {
     margin-right: 30vw;
     margin-top: 15vh;
     margin-bottom: 15vh;
-    border: solid #b7f799 0.3vw;
+    border: solid var(--content-background-solid) 0.3vw;
     min-height: 70vh;
     max-height: 70vh;
     min-width: 40vw;
@@ -26,7 +52,7 @@ body {
     overflow: auto;
     padding-left: 3%;
     padding-right: 3%;
-    background: #b7f79999;
+    background: var(--content-background-transparent);
     border-radius: 3%;
 }
 
@@ -40,7 +66,7 @@ body {
 .doof-evil-inc {
     font-family: monospace;
     font-size: xx-large;
-    color: darkorchid;
+    color: var(--evil-text);
 }
 
 @font-face {
@@ -61,11 +87,11 @@ body {
     max-height: 90vh;
     min-height: 30vh;
 
-    border: solid #b7f799 0.3vw;
+    border: solid var(--content-background-solid) 0.3vw;
     overflow: auto;
     padding-left: 0.3%;
     padding-right: 0.3%;
-    background: #b7f79999;
+    background: var(--content-background-transparent);
     border-radius: 3%;
 }
 
@@ -79,11 +105,11 @@ body {
     max-height: 90vh;
     min-height: 30vh;
 
-    border: solid #b7f799 0.3vw;
+    border: solid var(--content-background-solid) 0.3vw;
     overflow: auto;
     padding-left: 0.3%;
     padding-right: 0.3%;
-    background: #b7f79999;
+    background: var(--content-background-transparent);
     border-radius: 3%;
 }
 
@@ -97,15 +123,15 @@ body {
 }
 
 .bar-item {
-    color: #445f38;
+    color: var(--bar-text);
 }
 
 .bar-item-entry::before {
-    content: "⏹";
+    content: "■";
 }
 
 .selected::before {
-    content: "⏺";
+    content: "◆";
 }
 
 .bar-item.closed::before {
@@ -121,14 +147,14 @@ body {
 .bar-item-entry:link,
 .bar-item-entry:visited,
 .bar-item-entry:hover {
-    color: #445f38;
+    color: var(--bar-text);
 }
 
 .selected:link,
 .selected:visited,
 .selected:hover,
 .selected {
-    color: #52375e;
+    color: var(--bar-text-selected);
 }
 
 .content {
@@ -141,11 +167,11 @@ body {
 }
 
 .debug {
-    border: solid #f499f7 0.3vw;
+    border: solid var(--debug-background-solid) 0.3vw;
     overflow: auto;
     padding-left: 0.3%;
     padding-right: 0.3%;
-    background: #fab8fc;
+    background: var(--debug-background-transparent);
     border-radius: 3%;
 }
 
@@ -159,13 +185,13 @@ body {
 }
 
 .button.active {
-    background: #fab8fc;
-    border: solid #f499f7 0.3vw;
+    background: var(--button-background-active);
+    border: solid var(--button-border-active) 0.3vw;
 }
 
 .button.inactive {
-    background: #d9a1db;
-    border: solid #bf79c2 0.3vw;
+    background: var(--button-background-inactive);
+    border: solid var(--button-border-inactive) 0.3vw;
 }
 
 .button-bar {
@@ -189,7 +215,7 @@ body {
 }
 
 .fizzy-name {
-    color: #299111;
+    color: var(--fizzy-name-text);
 }
 
 .fizzy-name::before,
@@ -201,19 +227,41 @@ body {
 
 .onrac-without-the-rac {
     font-family: fantasy;
-    color: darkcyan;
+    color: var(--onrac-name-text);
     font-size: 2rem;
 }
 
 .warning-full-width {
-    background-color: #f7999999;
+    background-color: var(--warning-background-transparent);
     width: 100%;
     font-size: large;
     padding: 0.5vw;
     border-radius: 1%;
-    border: solid #f79999 0.3vw;
+    border: solid var(--warning-background-solid) 0.3vw;
 }
 
 .display-initial {
     display: initial;
+}
+
+a.fanci-list-link {
+    text-decoration: none;
+    color: var(--TOC-link-text);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: solid var(--table-border) 0.3vw;
+    text-align: left;
+    padding: 8px;
+    border-radius: 3%;
+}
+
+tr:nth-child(even) {
+    background-color: var(--table-alt-row);
 }
