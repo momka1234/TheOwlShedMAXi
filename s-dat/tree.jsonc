@@ -19,7 +19,14 @@
             "style": "",
             "style-selected": "",
             "url": "/debug/sample-page.html",
-            "id": 6
+            "id": -1
+        },
+        {
+            "name": "Sample Page -- Review",
+            "style": "",
+            "style-selected": "",
+            "url": "/debug/sample-page-review.html",
+            "id": -1
         }
     ],
     "home": [
