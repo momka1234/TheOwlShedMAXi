@@ -128,10 +128,12 @@ body {
 
 .bar-item-entry::before {
     content: "\e003";
+    font-family: "Font Awesome 6 Pro";
 }
 
 .selected::before {
     content: "\e001";
+    font-family: "Font Awesome 6 Pro";
 }
 
 .bar-item.closed::before {
