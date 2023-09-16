@@ -92,6 +92,7 @@ window.onload = function () {
 <li>FILLED→${loaded.filled == -1 ? 'none' : loaded.filled + 1}
 </ul></div>`;
     }
+    bar.innerHTML += `<p class="tiny-but-readable-n-not-shit">NOTE: this page requests icons hosted by font awesome. This is unavoidable because of how I'm using them. I did my best to prevent tracking of your request, and you can always block third-partie requests with browser based tools</p>`
 }
 
 var toggleHidden = function (group) {

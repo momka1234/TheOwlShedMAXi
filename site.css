@@ -1,25 +1,25 @@
 :root {
     --true-background-gradient: linear-gradient(to top, #f9dd9a, #f0f99a);
-    
+
     --content-background-solid: #b7f799;
     --content-background-transparent: #b7f79999;
     --debug-background-solid: #f499f7;
     --debug-background-transparent: #f499f799;
     --warning-background-solid: #f79999;
     --warning-background-transparent: #f7999999;
-    
+
     --button-background-active: #fab8fc;
     --button-border-active: #f499f7;
     --button-background-inactive: #d9a1db;
     --button-border-inactive: #bf79c2;
-    
+
     --evil-text: darkorchid;
     --bar-text: #445f38;
     --bar-text-selected: #52375e;
     --fizzy-name-text: #299111;
     --onrac-name-text: darkcyan;
     --TOC-link-text: #8d38f4;
-    
+
     --table-border: #b979bd;
     --table-alt-row: #b979bd99;
 }
@@ -127,11 +127,11 @@ body {
 }
 
 .bar-item-entry::before {
-    content: "■";
+    content: "\e003";
 }
 
 .selected::before {
-    content: "◆";
+    content: "\e001";
 }
 
 .bar-item.closed::before {
