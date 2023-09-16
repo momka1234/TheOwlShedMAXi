@@ -1,0 +1,19 @@
+.bar-item-entry::before {
+    content: "■" !important;
+    font-family: fantasy !important;
+}
+
+.selected::before {
+    content: "◆" !important;
+    font-family: fantasy !important;
+}
+
+.bar-item.closed::before {
+    content: "▲" !important;
+    font-family: fantasy !important;
+}
+
+.bar-item::before {
+    content: "▼" !important;
+    font-family: fantasy !important;
+}

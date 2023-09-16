@@ -26,6 +26,7 @@ window.onload = function () {
     });
 
     let IS_DEBUG = params.debug == 1;
+    let ICONS_FALLBACK = params.icons_fallback == 1;
 
     pageId = document.getElementById("pagedat").innerHTML.split(':')[0];
 
@@ -82,7 +83,7 @@ window.onload = function () {
     }
 
     if (IS_DEBUG) {
-        bar.innerHTML += `<div class="monospace debug"><h2>DEBUG_INFO</h2>
+        bar.innerHTML += `<div class="monospace debug"><h2>\ue5eb DEBUG_INFO</h2>
 <ul>
 <li>PAGEDAT→${document.getElementById("pagedat").innerHTML}
 <li>LD_DEBUG→${loaded.debug ?? 'failed'}
@@ -90,9 +91,13 @@ window.onload = function () {
 <li>LD_FRIENDSHIP→${loaded.friendship ?? 'failed'}
 <li>LD_THOUGHTS→${loaded.thoughts ?? 'failed'}
 <li>FILLED→${loaded.filled == -1 ? 'none' : loaded.filled + 1}
+<li>FNT_ASM_V→${window.FontAwesomeKitConfig?.version ?? "FAILED"}
 </ul></div>`;
     }
-    bar.innerHTML += `<p class="tiny-but-readable-n-not-shit">NOTE: this page requests icons hosted by font awesome. This is unavoidable because of how I'm using them. I did my best to prevent tracking of your request, and you can always block third-partie requests with browser based tools</p>`
+    if (!ICONS_FALLBACK)
+        bar.innerHTML += `<p class="tiny-but-readable-n-not-shit">Icons not loading? <a href="?icons_fallback=1&debug=${IS_DEBUG == 1 ? 1 : 0}">Use unicode instead</a></p>`
+    else
+        document.head.innerHTML += '<link rel="stylesheet" href="/icons-fallback.css">'
 }
 
 var toggleHidden = function (group) {

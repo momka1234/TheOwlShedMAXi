@@ -137,11 +137,13 @@ body {
 }
 
 .bar-item.closed::before {
-    content: "▲"
+    content: "\e008";
+    font-family: "Font Awesome 6 Pro";
 }
 
 .bar-item::before {
-    content: "▼"
+    content: "\f762";
+    font-family: "Font Awesome 6 Pro";
 }
 
 
