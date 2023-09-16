@@ -27,6 +27,13 @@
             "style-selected": "",
             "url": "/debug/sample-page-review.html",
             "id": -1
+        },
+        {
+            "name": "Icons Test",
+            "style": "",
+            "style-selected": "",
+            "url": "/debug/icons-test.html",
+            "id": 12
         }
     ],
     "home": [
@@ -43,6 +50,13 @@
             "style-selected": "",
             "url": "/pronouns.html",
             "id": 3
+        },
+        {
+            "name": "404",
+            "style": "",
+            "style-selected": "",
+            "url": "/404.html",
+            "id": 11
         }
     ],
     "friendship": [
