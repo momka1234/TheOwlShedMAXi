@@ -83,7 +83,7 @@ window.onload = function () {
     }
 
     if (IS_DEBUG) {
-        bar.innerHTML += `<div class="monospace debug"><h2>\ue5eb DEBUG_INFO</h2>
+        bar.innerHTML += `<div class="monospace debug"><h2><span class="fa-sharp fa-regular fa-ufo"></span> Debugging Info</h2>
 <ul>
 <li>PAGEDAT→${document.getElementById("pagedat").innerHTML}
 <li>LD_DEBUG→${loaded.debug ?? 'failed'}
